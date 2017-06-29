@@ -18,11 +18,11 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
   config.action_mailer.smtp_settings = {
-    address:              'smtp.gmail.com',
-    port:                 587,
+    address:              'smtp.optecom.com.co',
+    port:                 25,
     domain:               'cs169-1x-sergiohdez.c9users.io',
-    user_name:            'sergioluisha@gmail.com',
-    password:             'qsc-lih56',
+    user_name:            'slhernandez@optecom.com.co',
+    password:             'qsclih56',
     authentication:       'plain',
     enable_starttls_auto: true  }
 
