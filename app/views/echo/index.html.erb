@@ -1,0 +1,8 @@
+<h1>Send email</h1>
+<%= flash[:notice] if flash[:notice] %>
+<%= flash[:error] if flash[:error] %>
+<form action="<%= root_path %>" method="GET">
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" required="required" />
+    <input type="submit" value="Send!" />
+</form>
