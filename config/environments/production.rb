@@ -68,11 +68,12 @@ Rails.application.configure do
   config.action_mailer.smtp_settings = {
     address:              'smtp.gmail.com',
     port:                 465,
-    domain:               'cs169-1x-sergiohdez.c9users.io',
+    #domain:               'cs169-1x-sergiohdez.c9users.io',
     user_name:            'sergioluisha@gmail.com',
     password:             'qsc-lih56',
     authentication:       'plain',
-    enable_starttls_auto: true  }
+    enable_starttls_auto: true,
+    ssl: true}
 
   # Enable locale fallbacks for I18n (makes lookups for any locale fall back to
   # the I18n.default_locale when a translation cannot be found).
