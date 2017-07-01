@@ -1,8 +1,8 @@
 <h1>Send email</h1>
 <%= flash[:notice] if flash[:notice] %>
 <%= flash[:error] if flash[:error] %>
-<form action="<%= root_path %>" method="GET">
-    <label for="email">Email:</label>
-    <input type="text" id="email" name="email" required="required" />
-    <input type="submit" value="Send!" />
-</form>
+<%= form_tag echo_send_path, :method=>"post" do %>
+    <%= label_tag "email" %>
+    <%= text_field_tag "email", nil, :required=>"required" %>
+    <%= submit_tag "Send!" %>
+<% end %>

@@ -1,5 +1,8 @@
 class EchoController < ApplicationController
     def index
+    end
+    
+    def send_mail
         flash[:notice] = ""
         flash[:error] = ""
         if params[:email]
@@ -12,5 +15,6 @@ class EchoController < ApplicationController
                 flash[:notice] = "Email send to #{@email}"
             end
         end
+        redirect_to root_path
     end
 end
